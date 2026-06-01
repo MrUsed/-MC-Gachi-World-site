@@ -13,7 +13,7 @@
 
 ## Посилання
 - [Figma] https://www.figma.com/design/FwO9II0acl5ZoIq141OHbp/saite?node-id=0-1&p=f&t=RTSVC3oZEu2x9XoP-0
-- [(GitHub Pages)]  https://st9308153-ux.github.io/profile-card/
+- [(GitHub Pages)]  [https://st9308153-ux.github.io/profile-card/](https://mrused.github.io/-MC-Gachi-World-site/)
 
 
 
