@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Для того щоб плавно скролити */
+}
+
+body {
+    font-family: 'Pixelify Sans', sans-serif;
+    color: #FFFFFF;
+    background-color: #231F20;
+    overflow-x: hidden; /* Щоб не зламати логіку скролу */
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+/* --- Фіксує шапку --- */
+.header {
+    width: 100%;
+    height: 119px;
+    background-color: #231F20;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: auto;
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: opacity 0.3s;
+}
+
+.logo-link:hover {
+    opacity: 0.8;
+}
+
+.logo-img {
+    width: 97px;
+    height: 97px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 22px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 60px; 
+}
+
+.nav-menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #FFD700;
+}
+
+/* --- Банер --- */
+.hero-banner {
+    width: 100%;
+    height: 810px;
+    background-image: url('img/skrin8.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-content h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 58px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* --- Штука яка розділяє екран на попалам --- */
+.divider {
+    width: 100%;
+    height: 219px;
+    background-color: #231F20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 40px;
+}
+
+.divider h2 {
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.star-icon {
+    width: 112px;
+    height: 112px;
+    flex-shrink: 0;
+}
+
+/* --- Дизайн сітки зоображення --- */
+.grid-section {
+    width: 100%;
+    background-color: #8B6B6B; 
+    padding: 80px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    column-gap: 60px; 
+    row-gap: 80px;    
+    padding: 0 100px; 
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+/* Анімації коли наводиш на фотки */
+.card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border: 4px solid transparent; 
+    border-radius: 10px;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05); 
+    border-color: rgba(255, 255, 255, 0.5); 
+}
+
+.card p {
+    font-size: 32px;
+    text-align: center;
+}
